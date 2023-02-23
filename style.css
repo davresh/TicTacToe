@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0 2%;
+    background-image: url(./newYear2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.win{
+    width: 100%;height: 100vh;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+.winAcc{
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    color: snow;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+.playAgain{
+    border: none;
+    padding: 10px 15px;
+    background-color: #2ac991;
+    color: snow;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 10px;
+}
+.playAgain:hover{
+    background-color: #0e573d;
+}
+.ask{
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: snow;
+}
+.Information{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: snow;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    padding: 10px 7px;
+}
+.gameInf{
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: 500;
+}
+.block{
+    width: 350px;height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: snow;
+    padding: 10px;
+    border-radius: 20px;
+    animation: back 5s infinite;
+}
+.play{
+    width: 31%;height: 31%;
+    margin: 1%;
+    background-color: #636979;
+    color: #039A0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    cursor: pointer;
+    font-family: cursive;
+    border-radius: 10px;
+    transition: .4s;
+}
+.play:hover{
+    background-color: #DB122C;
+}
+.play:active{
+    font-size: 63px;
+    background-color: rgb(77, 56, 11);
+}
+@keyframes back {
+    0%{
+        background-color: snow;
+    }
+    50%{
+        background-color: #1b34d5;
+    }
+    100%{
+        background-color: snow;
+    }
+}
+@media screen and(max-width:569px){
+    
+}
